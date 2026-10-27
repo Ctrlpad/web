@@ -32,7 +32,7 @@ function Ctrlpad() {
         <button
           key={label}
           className={cn(
-            "w-32 h-32 flex items-center justify-center rounded-xl border-b-6 border-r-4 text-black font-bold hover:border-none",
+            "w-32 h-32 flex items-center justify-center rounded-xl border-b-5 border-r-4 text-black font-bold hover:border-b-0 hover:border-r-0 transition-[border] duration-200 ease-in-out",
             color,
             border
           )}
