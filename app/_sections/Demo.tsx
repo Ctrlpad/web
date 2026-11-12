@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils"
-import { Terminal, EighthNote, NotebookPen, GitPullRequest, VolumeOff, Mic } from "lucide-react"
+import { cn } from "@/lib/utils";
+import { Terminal, EighthNote, NotebookPen, GitPullRequest, VolumeOff, Mic } from "lucide-react";
 
 export default function Demo() {
   return (
@@ -14,7 +14,7 @@ export default function Demo() {
         <Ctrlpad />
       </div>
     </section>
-  )
+  );
 }
 
 function Ctrlpad() {
@@ -31,10 +31,11 @@ function Ctrlpad() {
     <div className="bg-black p-6 rounded-2xl grid grid-cols-3 gap-4">
       {buttons.map(({ label, color, border }) => (
         <button
+          key={color}
           className={cn(
             "w-32 h-32 flex items-center justify-center rounded-xl border-b-5 border-r-4 text-black font-bold hover:border-b-7 hover:border-r-6 transition-[border] duration-150 ease-in-out",
             color,
-            border
+            border,
           )}
         >
           {label}
